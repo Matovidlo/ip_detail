@@ -9,7 +9,7 @@ To run this program you need prerequisites.
 ### Prerequisites
 To run this application you need python3.6, Ipwhois package installed by pip.
 ```
-	pip3.6 install ipwhois --user
+pip3.6 install ipwhois --user
 ```
 Another option is to donwload it from python packaging website. Used version is
 1.0.0.
@@ -43,7 +43,10 @@ Output:
                 "query": "147.229.216.41",
                 "nets": [
                     {
-                        "cidr": "147.229.0.0/17, 147.229.128.0/18, 147.229.192.0/19, 147.229.224.0/20, 147.229.240.0/21, 147.229.248.0/22, 147.229.252.0/23, 147.229.254.0/24",
+                        "cidr": "147.229.0.0/17, 147.229.128.0/18,
+                        		147.229.192.0/19, 147.229.224.0/20,
+                        		147.229.240.0/21, 147.229.248.0/22,
+                        		147.229.252.0/23, 147.229.254.0/24",
                         "name": "VUTBRNET",
                         "handle": "CA6319-RIPE",
                         "range": "147.229.0.0 - 147.229.254.255",
