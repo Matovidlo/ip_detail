@@ -5,7 +5,7 @@ import json
 import argparse
 import warnings
 import datetime
-from ipwhois import IPWhois
+from ipwhois import IPWhois, exceptions
 
 
 def primitive_clean(dictionary, condition):
@@ -37,7 +37,14 @@ class WhoisInfo:
         To return not cleaned keys just remove self.clean()
         '''
         obj = self.whois(ip_addr)
-        self.data = obj.lookup_whois()
+        try:
+            self.data = obj.lookup_whois()
+        except exceptions.HTTPLookupError:
+            return {"WhoisInfo": "404Not Found"}
+        except exceptions.WhoisRateLimitError:
+            return {"WhoisInfo": "Blacklist"}
+        except exceptions.WhoisLookupError:
+            return {"WhoisInfo": "Lookup error"}
         cleaned_data = self.clean()
         return {"Whois Info": cleaned_data}
 
@@ -84,7 +91,10 @@ class DNSReverseInfo:
         resolve dns record
         returns dictionary with name and informations.
         '''
-        self.info = self.socket.gethostbyaddr(ip_addr)
+        try:
+            self.info = self.socket.gethostbyaddr(ip_addr)
+        except socket.herror:
+            return {"DNS reverse Info": "Not Found"}
         self.info = self.clean()
         return {"DNS reverse Info": self.info}
 
@@ -92,7 +102,6 @@ class DNSReverseInfo:
         '''
         Cleans gethostbyaddr list
         '''
-        # TODO return whole list or just one thing?
         return self.info[0]
 
 class GeoLocationInfo:
@@ -141,6 +150,7 @@ class UnixTimestamp:
         returns timestamp info in dict name and string.
         '''
         # %Z is for timezone. Could be removed
+        self.timestamp = datetime.datetime.now()
         info = self.format_timestamp("%Y-%m-%d %I:%M:%S%p (%Z)")
         return {"Timestamp Info": info}
 
@@ -160,10 +170,26 @@ class Reverse:
         self.arguments = argparse.ArgumentParser()
         self.query = []
         self.info = []
-        self.arguments.add_argument("--ip", type=str, dest="ip_addr",
+        self.arguments.add_argument("--ip", dest="ip_addr",
                                     action='store', required=True,
                                     help="Specifies ip address which \
                                     should be resolved.")
+        self.ip_set = set()
+
+    def parse_if_file(self):
+        '''
+        parses file with infohash{ip_address,port}, takes ip_address
+        and perform class actions.
+        '''
+        try:
+            data = json.load(open(self.arguments.ip_addr))
+        except FileNotFoundError:
+            return
+        except json.decoder.JSONDecodeError:
+            print("File is not in json format.")
+            exit(1)
+        for value in data.values():
+            self.ip_set.add(value[0][0])
 
     def add_args(self, info):
         '''
@@ -199,10 +225,22 @@ class Reverse:
         Strict to have resolve method in class
         '''
         info_list = []
-        for instance in self.info:
-            info = instance.resolve(self.arguments.ip_addr)
-            info_list.append(info)
-        ip_dict = {"information": info_list}
+        ip_dict = {}
+
+        if self.ip_set != set():
+            for ip_address in self.ip_set:
+                for instance in self.info:
+                    info = instance.resolve(ip_address)
+                    info_list.append(info)
+                    # if len(info_list) > 50:
+                        # info_list = []
+            ip_dict["Information"] = info_list
+            return ip_dict
+        else:
+            for instance in self.info:
+                info = instance.resolve(self.arguments.ip_addr)
+                info_list.append(info)
+            ip_dict["Information"] = info_list
         return ip_dict
 
 
@@ -224,6 +262,7 @@ def set_information():
     reverse.add_args(info)
 
     reverse.change_query_information()
+    reverse.parse_if_file()
     result = reverse.perform()
     return result
 

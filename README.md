@@ -6,6 +6,21 @@ and gethostbyname. Result is in json format and can be redisigned easily.
 ### Getting Started
 To run this program you need prerequisites.
 
+### Problems to be solved
+```
+1. This implementation is very slow on bigger data set of ip's. So there is an
+appeal to rework IpWhois implementation. On 6000 ip's it takes about 30 minutes
+to solve Timestamp(primitive), GeoLocation and DNS Reverse Resolution.
+```
+Maybe solution -
+2. Currently working on rust variant, which I think should be faster than python
+variant.
+
+### To Contribute
+Maybe refactor some not obvious parts, but this is mostly very simple client
+so there is not that much work. I would appreciate when someone contribute to
+make this implementation faster. Thanks a lot.
+
 ### Prerequisites
 To run this application you need python3.6, Ipwhois package installed by pip.
 ```

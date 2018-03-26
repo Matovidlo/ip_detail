@@ -1,0 +1,4 @@
+dnspython
+
+[:python_version < "3.3"]
+ipaddr
