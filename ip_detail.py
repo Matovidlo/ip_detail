@@ -5,8 +5,9 @@ import json
 import argparse
 import warnings
 import datetime
-from ipwhois import IPWhois, exceptions
-
+import re
+from telnetlib import Telnet
+# from IPy import IP
 
 def primitive_clean(dictionary, condition):
     '''
@@ -27,8 +28,72 @@ class WhoisInfo:
         self.option = "-w"
         self.argument = "whois"
         self.help = "When specified, whois information is not printed"
-        self.whois = IPWhois
+        self.input_whois = json.load(open("./registrar/ipv4_ASR.json"))
         self.data = None
+        self.resolution = None
+
+    def get_hostname(self, ip_addr):
+        '''
+        Gets whois server hostname from iana ipv4 address space register
+        which is stored inside ./registrar/ipv4_ASR.json.
+        '''
+        record = self.input_whois["record"]
+        index = ip_addr.index(".")
+        resolve = ip_addr[:index]
+        while len(resolve) != 3:
+            resolve = '0' + resolve
+        for item in record:
+            compare_value = item["prefix"][:-2]
+            if compare_value == resolve:
+                return item["whois"]
+
+    def convert_to_json(self, referral):
+        '''
+        Serialize whois response message to json. This is just for nice format
+        of output stream.
+        '''
+        try:
+            index = self.resolution.index("inetnum")
+        except ValueError:
+            return {"Whois Info": "not found"}
+        json_result = {"Whois Info": referral}
+        old_key = None
+        for items in self.resolution[index::].splitlines():
+            try:
+                index = items.index(":")
+            except ValueError:
+                continue
+            if old_key == items[:index]:
+                # create list from it
+                json_key = json_result[items[:index]]
+                if isinstance(json_key, str):
+                    json_result[items[:index]] = json_key.splitlines()
+                json_result[items[:index]].append((items[index + 1:].strip()))
+            else:
+                json_result[items[:index]] = items[index + 1:].strip()
+            old_key = items[:index]
+        return json_result
+
+
+    def get_answer(self, hostname, message, port=43):
+        '''
+        Send message request to given hostname. Read response and decode it
+        with different decodes.
+        '''
+        # DEBUG
+        print("hostname: {} port: {}".format(hostname, port))
+        with Telnet(hostname, port) as telnet:
+            telnet.write(message.encode())
+            try:
+                data = telnet.read_all()
+            except ConnectionResetError:
+                self.resolution = ""
+                return
+        try:
+            self.resolution = data.decode("utf-8")
+        except UnicodeDecodeError:
+            self.resolution = data.decode("latin-1")
+
 
     def resolve(self, ip_addr):
         '''
@@ -36,17 +101,43 @@ class WhoisInfo:
         returns name and cleaned dictionary data.
         To return not cleaned keys just remove self.clean()
         '''
-        obj = self.whois(ip_addr)
+        hostname = self.get_hostname(ip_addr)
+        message = ip_addr + "\r\n"
         try:
-            self.data = obj.lookup_whois()
-        except exceptions.HTTPLookupError:
-            return {"WhoisInfo": "404Not Found"}
-        except exceptions.WhoisRateLimitError:
-            return {"WhoisInfo": "Blacklist"}
-        except exceptions.WhoisLookupError:
-            return {"WhoisInfo": "Lookup error"}
-        cleaned_data = self.clean()
-        return {"Whois Info": cleaned_data}
+            self.get_answer(hostname, message)
+        except TimeoutError:
+            self.resolution = ""
+
+        # get refferal if whois server has no answer
+        try:
+            index = self.resolution.index("ReferralServer")
+        except ValueError:
+            return self.convert_to_json(hostname)
+        # get refferal, splitlines, get first referral with port
+        # and get its value
+        referral = re.search(r"(\w+[\.:]){2,}", self.resolution[index::])
+        referral = referral.group(0)[:-1]
+        # add '.net' when is absent
+        if referral[-4::] == ".net" or referral[-4::] == ".com":
+            pass
+        else:
+            referral = referral + ".net"
+
+        referral_port = re.search(r"\:\d+", self.resolution[index::])
+        if referral_port is not None:
+            referral_port = referral_port.group(0)[1::]
+        else:
+            referral_port = 43
+
+        # send packet to referral
+        try:
+            self.get_answer(referral, message, referral_port)
+        # except socket.gaierror:
+        #     referral = re.search(r"(\w+[\.]){2,}.*", self.resolution[index::])
+        #     self.get_answer(referral.group(0), message, referral_port)
+        except TimeoutError:
+            self.resolution = ""
+        return self.convert_to_json(referral)
 
     def clean(self):
         '''

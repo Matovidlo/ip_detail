@@ -1,0 +1,3231 @@
+{
+   "@id": "ipv4-address-space",
+   "title": "IANA IPv4 Address Space Registry",
+   "category": "Internet Protocol version 4 (IPv4) Address Space",
+   "updated": "2018-02-21",
+   "xref": {
+      "@data": "rfc7249"
+   },
+   "registration_rule": {
+      "#text": [
+         "Allocations to RIRs are made in line with the Global Policy published at",
+         ". \nAll other assignments require IETF Review."
+      ],
+      "xref": {
+         "@data": "http://www.icann.org/en/resources/policy/global-addressing"
+      }
+   },
+   "description": {
+      "#text": [
+         "The allocation of Internet Protocol version 4 (IPv4) address space to various registries is listed\nhere. Originally, all the IPv4 address spaces was managed directly by the IANA. Later parts of the\naddress space were allocated to various other registries to manage for particular purposes or\nregional areas of the world. RFC 1466",
+         "documents most of these allocations."
+      ],
+      "xref": {
+         "@data": "rfc1466"
+      }
+   },
+   "record": [
+      {
+         "prefix": "000/8",
+         "designation": "IANA - Local Identification",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "2"
+         }
+      },
+      {
+         "prefix": "001/8",
+         "designation": "APNIC",
+         "date": "2010-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "002/8",
+         "designation": "RIPE NCC",
+         "date": "2009-09",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "003/8",
+         "designation": "Administered by ARIN",
+         "date": "1994-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "004/8",
+         "designation": "Level 3 Parent, LLC",
+         "date": "1992-12",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "005/8",
+         "designation": "RIPE NCC",
+         "date": "2010-11",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "006/8",
+         "designation": "Army Information Systems Center",
+         "date": "1994-02",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "007/8",
+         "designation": "Administered by ARIN",
+         "date": "1995-04",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "008/8",
+         "designation": "Level 3 Parent, LLC",
+         "date": "1992-12",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "009/8",
+         "designation": "Administered by ARIN",
+         "date": "1992-08",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "010/8",
+         "designation": "IANA - Private Use",
+         "date": "1995-06",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "3"
+         }
+      },
+      {
+         "prefix": "011/8",
+         "designation": "DoD Intel Information Systems",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "012/8",
+         "designation": "AT&T Bell Laboratories",
+         "date": "1995-06",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "013/8",
+         "designation": "Administered by ARIN",
+         "date": "1991-09",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "014/8",
+         "designation": "APNIC",
+         "date": "2010-04",
+         "whois": "whois.apnic.net",
+         "status": "ALLOCATED",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "xref": {
+            "@data": "4"
+         }
+      },
+      {
+         "prefix": "015/8",
+         "designation": "Administered by ARIN",
+         "date": "1994-07",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "016/8",
+         "designation": "Hewlett Packard Enterprise Company",
+         "date": "1994-11",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "017/8",
+         "designation": "Apple Computer Inc.",
+         "date": "1992-07",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "018/8",
+         "designation": "Administered by ARIN",
+         "date": "1994-01",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "019/8",
+         "designation": "Ford Motor Company",
+         "date": "1995-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "020/8",
+         "designation": "Administered by ARIN",
+         "date": "1994-10",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "021/8",
+         "designation": "DDN-RVN",
+         "date": "1991-07",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "022/8",
+         "designation": "Defense Information Systems Agency",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "023/8",
+         "designation": "ARIN",
+         "date": "2010-11",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "024/8",
+         "designation": "ARIN",
+         "date": "2001-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "025/8",
+         "designation": "UK Ministry of Defence",
+         "date": "1995-01",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "026/8",
+         "designation": "Defense Information Systems Agency",
+         "date": "1995-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "027/8",
+         "designation": "APNIC",
+         "date": "2010-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "028/8",
+         "designation": "DSI-North",
+         "date": "1992-07",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "029/8",
+         "designation": "Defense Information Systems Agency",
+         "date": "1991-07",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "030/8",
+         "designation": "Defense Information Systems Agency",
+         "date": "1991-07",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "031/8",
+         "designation": "RIPE NCC",
+         "date": "2010-05",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "@updated": "2015-05-01",
+         "prefix": "032/8",
+         "designation": "Administered by ARIN",
+         "date": "1994-06",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "033/8",
+         "designation": "DLA Systems Automation Center",
+         "date": "1991-01",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "034/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-03",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "035/8",
+         "designation": "Administered by ARIN",
+         "date": "1994-04",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "036/8",
+         "designation": "APNIC",
+         "date": "2010-10",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "037/8",
+         "designation": "RIPE NCC",
+         "date": "2010-11",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "038/8",
+         "designation": "PSINet, Inc.",
+         "date": "1994-09",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "039/8",
+         "designation": "APNIC",
+         "date": "2011-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "040/8",
+         "designation": "Administered by ARIN",
+         "date": "1994-06",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "041/8",
+         "designation": "AFRINIC",
+         "date": "2005-04",
+         "whois": "whois.afrinic.net",
+         "rdap": {
+            "server": [
+               "https://rdap.afrinic.net/rdap/",
+               "http://rdap.afrinic.net/rdap/"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "042/8",
+         "designation": "APNIC",
+         "date": "2010-10",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "043/8",
+         "designation": "Administered by APNIC",
+         "date": "1991-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "044/8",
+         "designation": "Amateur Radio Digital Communications",
+         "date": "1992-07",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "045/8",
+         "designation": "Administered by ARIN",
+         "date": "1995-01",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "046/8",
+         "designation": "RIPE NCC",
+         "date": "2009-09",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "047/8",
+         "designation": "Administered by ARIN",
+         "date": "1991-01",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "048/8",
+         "designation": "Prudential Securities Inc.",
+         "date": "1995-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "049/8",
+         "designation": "APNIC",
+         "date": "2010-08",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "050/8",
+         "designation": "ARIN",
+         "date": "2010-02",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "@updated": "2015-05-11",
+         "prefix": "051/8",
+         "designation": "Administered by RIPE NCC",
+         "date": "1994-08",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "@updated": "2015-05-01",
+         "prefix": "052/8",
+         "designation": "Administered by ARIN",
+         "date": "1991-12",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "@updated": "2014-10-14",
+         "prefix": "053/8",
+         "designation": "Daimler AG",
+         "date": "1993-10",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "054/8",
+         "designation": "Administered by ARIN",
+         "date": "1992-03",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "055/8",
+         "designation": "DoD Network Information Center",
+         "date": "1995-04",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "056/8",
+         "designation": "US Postal Service",
+         "date": "1994-06",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "@updated": "2014-10-14",
+         "prefix": "057/8",
+         "designation": "Societe Internationale de Telecommunications Aeronautiques S.C.R.L.",
+         "date": "1995-05",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "058/8",
+         "designation": "APNIC",
+         "date": "2004-04",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "059/8",
+         "designation": "APNIC",
+         "date": "2004-04",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "060/8",
+         "designation": "APNIC",
+         "date": "2003-04",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "061/8",
+         "designation": "APNIC",
+         "date": "1997-04",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "062/8",
+         "designation": "RIPE NCC",
+         "date": "1997-04",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "063/8",
+         "designation": "ARIN",
+         "date": "1997-04",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "064/8",
+         "designation": "ARIN",
+         "date": "1999-07",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "065/8",
+         "designation": "ARIN",
+         "date": "2000-07",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "066/8",
+         "designation": "ARIN",
+         "date": "2000-07",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "067/8",
+         "designation": "ARIN",
+         "date": "2001-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "068/8",
+         "designation": "ARIN",
+         "date": "2001-06",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "069/8",
+         "designation": "ARIN",
+         "date": "2002-08",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "070/8",
+         "designation": "ARIN",
+         "date": "2004-01",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "071/8",
+         "designation": "ARIN",
+         "date": "2004-08",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "072/8",
+         "designation": "ARIN",
+         "date": "2004-08",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "073/8",
+         "designation": "ARIN",
+         "date": "2005-03",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "074/8",
+         "designation": "ARIN",
+         "date": "2005-06",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "075/8",
+         "designation": "ARIN",
+         "date": "2005-06",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "076/8",
+         "designation": "ARIN",
+         "date": "2005-06",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "077/8",
+         "designation": "RIPE NCC",
+         "date": "2006-08",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "078/8",
+         "designation": "RIPE NCC",
+         "date": "2006-08",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "079/8",
+         "designation": "RIPE NCC",
+         "date": "2006-08",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "080/8",
+         "designation": "RIPE NCC",
+         "date": "2001-04",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "081/8",
+         "designation": "RIPE NCC",
+         "date": "2001-04",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "082/8",
+         "designation": "RIPE NCC",
+         "date": "2002-11",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "083/8",
+         "designation": "RIPE NCC",
+         "date": "2003-11",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "084/8",
+         "designation": "RIPE NCC",
+         "date": "2003-11",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "085/8",
+         "designation": "RIPE NCC",
+         "date": "2004-04",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "086/8",
+         "designation": "RIPE NCC",
+         "date": "2004-04",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "087/8",
+         "designation": "RIPE NCC",
+         "date": "2004-04",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "088/8",
+         "designation": "RIPE NCC",
+         "date": "2004-04",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "089/8",
+         "designation": "RIPE NCC",
+         "date": "2005-06",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "090/8",
+         "designation": "RIPE NCC",
+         "date": "2005-06",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "091/8",
+         "designation": "RIPE NCC",
+         "date": "2005-06",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "092/8",
+         "designation": "RIPE NCC",
+         "date": "2007-03",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "093/8",
+         "designation": "RIPE NCC",
+         "date": "2007-03",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "094/8",
+         "designation": "RIPE NCC",
+         "date": "2007-07",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "095/8",
+         "designation": "RIPE NCC",
+         "date": "2007-07",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "096/8",
+         "designation": "ARIN",
+         "date": "2006-10",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "097/8",
+         "designation": "ARIN",
+         "date": "2006-10",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "098/8",
+         "designation": "ARIN",
+         "date": "2006-10",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "099/8",
+         "designation": "ARIN",
+         "date": "2006-10",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "100/8",
+         "designation": "ARIN",
+         "date": "2010-11",
+         "whois": "whois.arin.net",
+         "status": "ALLOCATED",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "xref": {
+            "@data": "5"
+         }
+      },
+      {
+         "prefix": "101/8",
+         "designation": "APNIC",
+         "date": "2010-08",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "102/8",
+         "designation": "AFRINIC",
+         "date": "2011-02",
+         "whois": "whois.afrinic.net",
+         "rdap": {
+            "server": [
+               "https://rdap.afrinic.net/rdap/",
+               "http://rdap.afrinic.net/rdap/"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "103/8",
+         "designation": "APNIC",
+         "date": "2011-02",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "104/8",
+         "designation": "ARIN",
+         "date": "2011-02",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "105/8",
+         "designation": "AFRINIC",
+         "date": "2010-11",
+         "whois": "whois.afrinic.net",
+         "rdap": {
+            "server": [
+               "https://rdap.afrinic.net/rdap/",
+               "http://rdap.afrinic.net/rdap/"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "106/8",
+         "designation": "APNIC",
+         "date": "2011-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "107/8",
+         "designation": "ARIN",
+         "date": "2010-02",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "108/8",
+         "designation": "ARIN",
+         "date": "2008-12",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "109/8",
+         "designation": "RIPE NCC",
+         "date": "2009-01",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "110/8",
+         "designation": "APNIC",
+         "date": "2008-11",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "111/8",
+         "designation": "APNIC",
+         "date": "2008-11",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "112/8",
+         "designation": "APNIC",
+         "date": "2008-05",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "113/8",
+         "designation": "APNIC",
+         "date": "2008-05",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "114/8",
+         "designation": "APNIC",
+         "date": "2007-10",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "115/8",
+         "designation": "APNIC",
+         "date": "2007-10",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "116/8",
+         "designation": "APNIC",
+         "date": "2007-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "117/8",
+         "designation": "APNIC",
+         "date": "2007-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "118/8",
+         "designation": "APNIC",
+         "date": "2007-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "119/8",
+         "designation": "APNIC",
+         "date": "2007-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "120/8",
+         "designation": "APNIC",
+         "date": "2007-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "121/8",
+         "designation": "APNIC",
+         "date": "2006-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "122/8",
+         "designation": "APNIC",
+         "date": "2006-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "123/8",
+         "designation": "APNIC",
+         "date": "2006-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "124/8",
+         "designation": "APNIC",
+         "date": "2005-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "125/8",
+         "designation": "APNIC",
+         "date": "2005-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "126/8",
+         "designation": "APNIC",
+         "date": "2005-01",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "127/8",
+         "designation": "IANA - Loopback",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "6"
+         }
+      },
+      {
+         "prefix": "128/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "129/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "130/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "131/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "132/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "133/8",
+         "designation": "Administered by APNIC",
+         "date": "1997-03",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "134/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "135/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "136/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "137/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "138/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "139/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "140/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "141/8",
+         "designation": "Administered by RIPE NCC",
+         "date": "1993-05",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "142/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "143/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "144/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "145/8",
+         "designation": "Administered by RIPE NCC",
+         "date": "1993-05",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "146/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "147/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "148/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "149/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "150/8",
+         "designation": "Administered by APNIC",
+         "date": "1993-05",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "151/8",
+         "designation": "Administered by RIPE NCC",
+         "date": "1993-05",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "152/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "153/8",
+         "designation": "Administered by APNIC",
+         "date": "1993-05",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "154/8",
+         "designation": "Administered by AFRINIC",
+         "date": "1993-05",
+         "whois": "whois.afrinic.net",
+         "rdap": {
+            "server": [
+               "https://rdap.afrinic.net/rdap/",
+               "http://rdap.afrinic.net/rdap/"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "155/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "156/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "157/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "158/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "159/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "160/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "161/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "162/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "163/8",
+         "designation": "Administered by APNIC",
+         "date": "1993-05",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "164/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "165/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "166/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "167/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "168/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "169/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "status": "LEGACY",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "xref": {
+            "@data": "7"
+         }
+      },
+      {
+         "prefix": "170/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "171/8",
+         "designation": "Administered by APNIC",
+         "date": "1993-05",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "172/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "status": "LEGACY",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "xref": {
+            "@data": "8"
+         }
+      },
+      {
+         "prefix": "173/8",
+         "designation": "ARIN",
+         "date": "2008-02",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "174/8",
+         "designation": "ARIN",
+         "date": "2008-02",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "175/8",
+         "designation": "APNIC",
+         "date": "2009-08",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "176/8",
+         "designation": "RIPE NCC",
+         "date": "2010-05",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "177/8",
+         "designation": "LACNIC",
+         "date": "2010-06",
+         "whois": "whois.lacnic.net",
+         "rdap": {
+            "server": "https://rdap.lacnic.net/rdap/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "178/8",
+         "designation": "RIPE NCC",
+         "date": "2009-01",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "179/8",
+         "designation": "LACNIC",
+         "date": "2011-02",
+         "whois": "whois.lacnic.net",
+         "rdap": {
+            "server": "https://rdap.lacnic.net/rdap/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "180/8",
+         "designation": "APNIC",
+         "date": "2009-04",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "181/8",
+         "designation": "LACNIC",
+         "date": "2010-06",
+         "whois": "whois.lacnic.net",
+         "rdap": {
+            "server": "https://rdap.lacnic.net/rdap/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "182/8",
+         "designation": "APNIC",
+         "date": "2009-08",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "183/8",
+         "designation": "APNIC",
+         "date": "2009-04",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "184/8",
+         "designation": "ARIN",
+         "date": "2008-12",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "185/8",
+         "designation": "RIPE NCC",
+         "date": "2011-02",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "186/8",
+         "designation": "LACNIC",
+         "date": "2007-09",
+         "whois": "whois.lacnic.net",
+         "rdap": {
+            "server": "https://rdap.lacnic.net/rdap/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "187/8",
+         "designation": "LACNIC",
+         "date": "2007-09",
+         "whois": "whois.lacnic.net",
+         "rdap": {
+            "server": "https://rdap.lacnic.net/rdap/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "188/8",
+         "designation": "Administered by RIPE NCC",
+         "date": "1993-05",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "189/8",
+         "designation": "LACNIC",
+         "date": "1995-06",
+         "whois": "whois.lacnic.net",
+         "rdap": {
+            "server": "https://rdap.lacnic.net/rdap/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "190/8",
+         "designation": "LACNIC",
+         "date": "1995-06",
+         "whois": "whois.lacnic.net",
+         "rdap": {
+            "server": "https://rdap.lacnic.net/rdap/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "191/8",
+         "designation": "Administered by LACNIC",
+         "date": "1993-05",
+         "whois": "whois.lacnic.net",
+         "rdap": {
+            "server": "https://rdap.lacnic.net/rdap/"
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "192/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "status": "LEGACY",
+         "xref": [
+            {
+               "@data": "9"
+            },
+            {
+               "@data": "10"
+            }
+         ],
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         }
+      },
+      {
+         "prefix": "193/8",
+         "designation": "RIPE NCC",
+         "date": "1993-05",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "194/8",
+         "designation": "RIPE NCC",
+         "date": "1993-05",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "195/8",
+         "designation": "RIPE NCC",
+         "date": "1993-05",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "196/8",
+         "designation": "Administered by AFRINIC",
+         "date": "1993-05",
+         "whois": "whois.afrinic.net",
+         "rdap": {
+            "server": [
+               "https://rdap.afrinic.net/rdap/",
+               "http://rdap.afrinic.net/rdap/"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "197/8",
+         "designation": "AFRINIC",
+         "date": "2008-10",
+         "whois": "whois.afrinic.net",
+         "rdap": {
+            "server": [
+               "https://rdap.afrinic.net/rdap/",
+               "http://rdap.afrinic.net/rdap/"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "198/8",
+         "designation": "Administered by ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "status": "LEGACY",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "xref": {
+            "@data": "11"
+         }
+      },
+      {
+         "prefix": "199/8",
+         "designation": "ARIN",
+         "date": "1993-05",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "200/8",
+         "designation": "LACNIC",
+         "date": "2002-11",
+         "whois": "whois.lacnic.net",
+         "rdap": {
+            "server": "https://rdap.lacnic.net/rdap/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "201/8",
+         "designation": "LACNIC",
+         "date": "2003-04",
+         "whois": "whois.lacnic.net",
+         "rdap": {
+            "server": "https://rdap.lacnic.net/rdap/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "202/8",
+         "designation": "APNIC",
+         "date": "1993-05",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "203/8",
+         "designation": "APNIC",
+         "date": "1993-05",
+         "whois": "whois.apnic.net",
+         "status": "ALLOCATED",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "xref": {
+            "@data": "12"
+         }
+      },
+      {
+         "prefix": "204/8",
+         "designation": "ARIN",
+         "date": "1994-03",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "205/8",
+         "designation": "ARIN",
+         "date": "1994-03",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "206/8",
+         "designation": "ARIN",
+         "date": "1995-04",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "207/8",
+         "designation": "ARIN",
+         "date": "1995-11",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "208/8",
+         "designation": "ARIN",
+         "date": "1996-04",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "209/8",
+         "designation": "ARIN",
+         "date": "1996-06",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "210/8",
+         "designation": "APNIC",
+         "date": "1996-06",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "211/8",
+         "designation": "APNIC",
+         "date": "1996-06",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "212/8",
+         "designation": "RIPE NCC",
+         "date": "1997-10",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "213/8",
+         "designation": "RIPE NCC",
+         "date": "1993-10",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "214/8",
+         "designation": "US-DOD",
+         "date": "1998-03",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "215/8",
+         "designation": "US-DOD",
+         "date": "1998-03",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "LEGACY"
+      },
+      {
+         "prefix": "216/8",
+         "designation": "ARIN",
+         "date": "1998-04",
+         "whois": "whois.arin.net",
+         "rdap": {
+            "server": [
+               "https://rdap.arin.net/registry",
+               "http://rdap.arin.net/registry"
+            ]
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "217/8",
+         "designation": "RIPE NCC",
+         "date": "2000-06",
+         "whois": "whois.ripe.net",
+         "rdap": {
+            "server": "https://rdap.db.ripe.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "218/8",
+         "designation": "APNIC",
+         "date": "2000-12",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "219/8",
+         "designation": "APNIC",
+         "date": "2001-09",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "220/8",
+         "designation": "APNIC",
+         "date": "2001-12",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "221/8",
+         "designation": "APNIC",
+         "date": "2002-07",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "222/8",
+         "designation": "APNIC",
+         "date": "2003-02",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "223/8",
+         "designation": "APNIC",
+         "date": "2010-04",
+         "whois": "whois.apnic.net",
+         "rdap": {
+            "server": "https://rdap.apnic.net/"
+         },
+         "status": "ALLOCATED"
+      },
+      {
+         "prefix": "224/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "225/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "226/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "227/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "228/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "229/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "230/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "231/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "232/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "233/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "234/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": [
+            {
+               "@data": "13"
+            },
+            {
+               "@data": "14"
+            }
+         ]
+      },
+      {
+         "prefix": "235/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "236/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "237/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "238/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "13"
+         }
+      },
+      {
+         "prefix": "239/8",
+         "designation": "Multicast",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": [
+            {
+               "@data": "13"
+            },
+            {
+               "@data": "15"
+            }
+         ]
+      },
+      {
+         "prefix": "240/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "241/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "242/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "243/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "244/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "245/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "246/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "247/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "248/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "249/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "250/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "251/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "252/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "253/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "254/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": {
+            "@data": "16"
+         }
+      },
+      {
+         "prefix": "255/8",
+         "designation": "Future use",
+         "date": "1981-09",
+         "status": "RESERVED",
+         "xref": [
+            {
+               "@data": "16"
+            },
+            {
+               "@data": "17"
+            }
+         ]
+      }
+   ],
+   "footnote": [
+      {
+         "@anchor": "1",
+         "#text": "Indicates the status of address blocks as follows:\nRESERVED: designated by the IETF for specific non-global-unicast purposes as noted.\nLEGACY: allocated by the central Internet Registry (IR) prior to the Regional Internet Registries\n(RIRs). This address space is now administered by individual RIRs as noted, including maintenance\nof WHOIS Directory and reverse DNS records. Assignments from these blocks are distributed globally\non a regional basis.\nALLOCATED: delegated entirely to specific RIR as indicated.\nUNALLOCATED: not yet allocated or reserved."
+      },
+      {
+         "@anchor": "2",
+         "#text": [
+            "0.0.0.0/8 reserved for self-identification",
+            ", section 3.2.1.3. \nReserved by protocol. For authoritative registration, see",
+            "."
+         ],
+         "xref": [
+            {
+               "@data": "rfc1122"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            }
+         ]
+      },
+      {
+         "@anchor": "3",
+         "#text": [
+            "Reserved for Private-Use Networks",
+            ".\nComplete registration details for 10.0.0.0/8 are found in",
+            "."
+         ],
+         "xref": [
+            {
+               "@data": "rfc1918"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            }
+         ]
+      },
+      {
+         "@anchor": "4",
+         "#text": [
+            "This was reserved for Public Data Networks",
+            ". See",
+            ".\nIt was recovered in February 2008 and was subsequently allocated to APNIC in April 2010."
+         ],
+         "xref": [
+            {
+               "@data": "rfc1356"
+            },
+            {
+               "@data": "public-data-network-numbers"
+            }
+         ]
+      },
+      {
+         "@anchor": "5",
+         "#text": [
+            "100.64.0.0/10 reserved for Shared Address Space",
+            ". \nComplete registration details for 100.64.0.0/10 are found in",
+            "."
+         ],
+         "xref": [
+            {
+               "@data": "rfc6598"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            }
+         ]
+      },
+      {
+         "@anchor": "6",
+         "#text": [
+            "127.0.0.0/8 reserved for Loopback",
+            ", section 3.2.1.3. \nReserved by protocol. For authoritative registration, see",
+            "."
+         ],
+         "xref": [
+            {
+               "@data": "rfc1122"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            }
+         ]
+      },
+      {
+         "@anchor": "7",
+         "#text": [
+            "169.254.0.0/16 reserved for Link Local",
+            ".\nReserved by protocol. For authoritative registration, see",
+            "."
+         ],
+         "xref": [
+            {
+               "@data": "rfc3927"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            }
+         ]
+      },
+      {
+         "@anchor": "8",
+         "#text": [
+            "172.16.0.0/12 reserved for Private-Use Networks",
+            ". \nComplete registration details are found in",
+            "."
+         ],
+         "xref": [
+            {
+               "@data": "rfc1918"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            }
+         ]
+      },
+      {
+         "@anchor": "9",
+         "#text": [
+            "192.0.2.0/24  reserved for TEST-NET-1",
+            ". \nComplete registration details for 192.0.2.0/24 are found in",
+            ".\n192.88.99.0/24 reserved for 6to4 Relay Anycast",
+            "Complete registration details for 192.88.99.0/24 are found in",
+            ".\n192.88.99.2/32 reserved for 6a44 Relay Anycast",
+            "(possibly collocated with 6to4 Relay \nat 192.88.99.1/32 - see",
+            "section 2.4)\n192.168.0.0/16 reserved for Private-Use Networks",
+            ". \nComplete registration details for 192.168.0.0/16 are found in",
+            "."
+         ],
+         "xref": [
+            {
+               "@data": "rfc5737"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            },
+            {
+               "@data": "rfc3068"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            },
+            {
+               "@data": "rfc6751"
+            },
+            {
+               "@data": "rfc3068"
+            },
+            {
+               "@data": "rfc1918"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            }
+         ]
+      },
+      {
+         "@anchor": "10",
+         "#text": [
+            "192.0.0.0/24 reserved for IANA IPv4 Special Purpose Address Registry",
+            ". \nComplete registration details for 192.0.0.0/24 are found in",
+            "."
+         ],
+         "xref": [
+            {
+               "@data": "rfc5736"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            }
+         ]
+      },
+      {
+         "@anchor": "11",
+         "#text": [
+            "198.18.0.0/15 reserved for Network Interconnect Device Benchmark Testing",
+            ". \nComplete registration details for 198.18.0.0/15 are found in",
+            ".\n198.51.100.0/24 reserved for TEST-NET-2",
+            ". \nComplete registration details for 198.51.100.0/24 are found in",
+            "."
+         ],
+         "xref": [
+            {
+               "@data": "rfc2544"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            },
+            {
+               "@data": "rfc5737"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            }
+         ]
+      },
+      {
+         "@anchor": "12",
+         "#text": [
+            "203.0.113.0/24 reserved for TEST-NET-3",
+            ". \nComplete registration details for 203.0.113.0/24 are found in",
+            "."
+         ],
+         "xref": [
+            {
+               "@data": "rfc5737"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            }
+         ]
+      },
+      {
+         "@anchor": "13",
+         "#text": [
+            "Multicast (formerly \"Class D\")",
+            "registered in"
+         ],
+         "xref": [
+            {
+               "@data": "rfc5771"
+            },
+            {
+               "@data": "multicast-addresses"
+            }
+         ]
+      },
+      {
+         "@anchor": "14",
+         "#text": "Unicast-Prefix-Based IPv4 Multicast Addresses",
+         "xref": {
+            "@data": "rfc6034"
+         }
+      },
+      {
+         "@anchor": "15",
+         "#text": "Administratively Scoped IP Multicast",
+         "xref": {
+            "@data": "rfc2365"
+         }
+      },
+      {
+         "@anchor": "16",
+         "#text": [
+            "Reserved for future use (formerly \"Class E\")",
+            ".\nReserved by protocol. For authoritative registration, see",
+            "."
+         ],
+         "xref": [
+            {
+               "@data": "rfc1112"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            }
+         ]
+      },
+      {
+         "@anchor": "17",
+         "#text": [
+            "255.255.255.255 is reserved for \"limited broadcast\" destination address",
+            "and",
+            ".\nComplete registration details for 255.255.255.255/32 are found in",
+            "."
+         ],
+         "xref": [
+            {
+               "@data": "rfc919"
+            },
+            {
+               "@data": "rfc922"
+            },
+            {
+               "@data": "iana-ipv4-special-registry"
+            }
+         ]
+      }
+   ],
+   "people": null
+}

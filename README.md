@@ -12,19 +12,11 @@ To run this program you need prerequisites.
 appeal to rework IpWhois implementation. On 6000 ip's it takes about 30 minutes
 to solve Timestamp(primitive), GeoLocation and DNS Reverse Resolution.
 ```
-Maybe solution -
-2. Currently working on rust variant, which I think should be faster than python
-variant.
-
-### To Contribute
-Maybe refactor some not obvious parts, but this is mostly very simple client
-so there is not that much work. I would appreciate when someone contribute to
-make this implementation faster. Thanks a lot.
 
 ### Prerequisites
 To run this application you need python3.6, Ipwhois package installed by pip.
 ```
-pip3.6 install ipwhois --user
+pip3 install -r requirements.txt
 ```
 Another option is to donwload it from python packaging website. Used version is
 1.0.0.
@@ -34,7 +26,7 @@ Output should looks like this after entering command:
 ```
 ./ip_detail --ip 147.229.216.41
 or
-python3.6 ip_detail --ip 147.229.216.41
+python3 ip_detail --ip 147.229.216.41
 ```
 
 Output:
@@ -98,6 +90,10 @@ Output:
     ]
 }
 ```
+### To Contribute
+Maybe refactor some not obvious parts, but this is mostly very simple client
+so there is not that much work. I would appreciate when someone contribute to
+make this implementation faster. Thanks a lot.
 
 ## Built With
 

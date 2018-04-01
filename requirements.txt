@@ -1,2 +1,4 @@
+pyquery==1.4.0
+IPy==0.81
 ipwhois==1.0.0
 whois==0.7
